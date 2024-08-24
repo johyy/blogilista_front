@@ -141,7 +141,7 @@ const App = () => {
         <h2>blogs</h2>
         <Notification message={notificationMessage} title={notificationTitle} author={notificationAuthor} />
         <p>{user.name} logged in <button onClick={handleLogout}>logout</button></p>
-        <Togglable buttonLabel="new note" visible={visible}>
+        <Togglable buttonLabel="new blog" visible={visible}>
           <BlogForm createBlog={addBlog} />
         </Togglable>
         {blogs.map(blog =>
